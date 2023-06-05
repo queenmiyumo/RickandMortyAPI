@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(24, 226, 37);
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+}
+
+body{
+  width: 100vw;
+  color: black;
+}
+.characters {
+  width: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  display: grid;
+  flex-direction: column;
+  font-size: medium;
+  align-items: center;
+  text-align: center;
+  content: '';
+  bottom: -10px;
+  transition: 0.5s;
+  left: 0;
+  
+  
+
+
+}
+.characters:hover{
+  width: 100%;
+}
+
+.charcont {
+color: black;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+padding: 5px;
+margin-bottom: 10px;
+border: 1px solid gray;
+gap: 60px;
+background-color: teal;
+justify-content: space-evenly;
+
+
+
+}
+div{
+  display: block;
+}
+
+.hero-content{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  background-image: url("https://images.hdqwalls.com/wallpapers/bthumb/rick-and-morty-out-of-control-4k-ak.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 220px;
+  font-size: 40px;
+  
+}
+.btn{
+    border: 0;
+    background-color: rgb(190, 255, 61);
+    outline: 0;
+    padding: 7px 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Arial;
+    text-decoration:none ;
+  
+}
+.charConst{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  
+
+}
+.charConst ul li{
+  list-style: none;
+  display: inline-flex;
+  margin:0 20px;
+  position: relative;
+}
+.charConst ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.charConst ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: blue;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+}
+.charConst ul li:hover::after{
+  width: 100%;
+}
